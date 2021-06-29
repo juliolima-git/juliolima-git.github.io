@@ -1,0 +1,88 @@
+.header{
+    background: var(--linear);
+    height: 250px;
+}
+
+.header-group {
+    padding-top: 2.563rem;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 4.563rem;
+}
+
+.menu__item {
+    color: var(--white);
+    font-family: LexendDeca, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.search {
+    background-color: rgba(255, 255, 255, 0.2);
+    background-image: url(/assets/images/lupa.svg);
+    background-repeat: no-repeat;
+    background-position: 20px;
+    background-size: 23px;
+    border: none;
+    border-radius: 5px;
+    color: var(--white);
+    font-family: Inter-Regular;
+    font-size: 1.125rem;
+    height: 65px;
+    opacity: .8;
+    outline: none;
+    padding: 0 50px;
+    width: 100%;
+}
+
+.search::placeholder {
+    color: var(--white);
+}
+
+.main {
+    margin-top: 100px;
+}
+
+.article {
+    padding: 23px;
+    background-color: var(--white);
+    border-radius: 5px;
+    margin-bottom: 50px;
+}
+
+.article__header {
+    color: rgba(182, 182, 182, 1);
+    display: flex;
+    font-family: LexendDeca, sans-serif;
+    font-size: 1rem;
+    justify-content: space-between;
+}
+
+.article__favorite-icon {
+    background-image: url(/assets/images/coracao.svg);
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 20px;
+    display: block;
+}
+
+.text__title{
+    font-family: LexendDeca, sans-serif;
+    font-size: 1.625rem;
+    margin-top: 22px;
+    margin-bottom: 8px;
+    color: var(--title);
+    font-style: normal;
+    font-weight: normal;
+}
+
+.text__content{
+    font-family: LexendDeca, sans-serif;
+    color: var(--text);
+    line-height: 32px;
+    font-size: 1.125rem;
+}
