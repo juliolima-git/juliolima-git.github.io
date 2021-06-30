@@ -23,7 +23,7 @@
 
 .search {
     background-color: rgba(255, 255, 255, 0.2);
-    background-image: url(../images/lupa.svg);
+    background-image: url(../images/bloom.svg);
     background-repeat: no-repeat;
     background-position: 20px;
     background-size: 23px;
@@ -60,14 +60,24 @@
     font-family: LexendDeca, sans-serif;
     font-size: 1rem;
     justify-content: space-between;
+    align-items: center;
 }
 
-.article__favorite-icon {
-    background-image: url(../images/coracao.svg);
+.article__favorite-button {
+    outline: none;
+    border: none;
+    background-color: var(--white);
+    cursor: pointer;
+    width: 2.75rem;
+    height: 2.75rem;
+    background-image: url(../images/heart.svg);
+    background-size: 23px;
     background-repeat: no-repeat;
-    width: 24px;
-    height: 20px;
-    display: block;
+    background-position: center;
+}
+
+.article__favorite-button--filled {
+    background-image: url(../images/heart-filled.svg);
 }
 
 .text__title{

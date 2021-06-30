@@ -26,7 +26,7 @@
         <article class="article">
             <div class="article__header">
                 <p>02 de jul, 2021</p>
-                <span class="article__favorite-icon" alt="Clique nesse artigo para favorita-lo"></span>
+                <button class="article__favorite-button" alt="Botão de favorito"></button>
             </div>
             <div class="article__body text">
                 <h2 class="text__title">Agora é oficial: o Windows 11 está vindo</h2>
@@ -36,7 +36,7 @@
         <article class="article">
             <div class="article__header">
                 <p>02 de jul, 2021</p>
-                <span class="article__favorite-icon" alt="Clique nesse artigo para favorita-lo"></span>
+                <button class="article__favorite-button" alt="Botão de favorito"></button>
             </div>
             <div class="article__body text">
                 <h2 class="text__title">Tim Berners-Lee vai leiloar código-fonte da web</h2>
@@ -46,7 +46,7 @@
         <article class="article">
             <div class="article__header">
                 <p>02 de jul, 2021</p>
-                <span class="article__favorite-icon" alt="Clique nesse artigo para favorita-lo"></span>
+                <button class="article__favorite-button" alt="Botão de favorito"></button>
             </div>
             <div class="article__body text">
                 <h2 class="text__title">Tem Firefox novo no pedaço e você vai querer migrar</h2>
@@ -56,7 +56,7 @@
         <article class="article">
             <div class="article__header">
                 <p>02 de jul, 2021</p>
-                <span class="article__favorite-icon" alt="Clique nesse artigo para favorita-lo"></span>
+                <button class="article__favorite-button" alt="Botão de favorito"></button>
             </div>
             <div class="article__body text">
                 <h2 class="text__title">John McAfee, criador do antivírus McAfee, morre</h2>
@@ -64,5 +64,16 @@
             </div>
         </article>
     </main>
+
+    <script>
+        const favoriteButtons = document.querySelectorAll(".article__favorite-button");
+
+        for(let button of favoriteButtons)
+            button.addEventListener("click", () => {
+                button.classList.toggle("article__favorite-button--filled");
+            }
+        )
+    </script>
+    
 </body>
 </html>
