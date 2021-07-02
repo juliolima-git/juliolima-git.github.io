@@ -5,8 +5,18 @@
 
   --title: #313131;
   --text: #B6B6B6;
+
+  --bg-color:#E5E5E5;
+  --bg-item: #FFF;
   
-  --linear: linear-gradient(90deg, #574AE8 0%, #3EA1DB 100%);
+  --header-color: linear-gradient(90deg, #574AE8 0%, #3EA1DB 100%);
+}
+
+[data-theme="dark"] {
+  --bg-color: #181818;
+  --bg-item: #202020;
+  --title: #574AE8;
+  --header-color: #202020;
 }
 
 .container {
@@ -18,7 +28,7 @@
 }
 
 body {
-  background-color: #E5E5E5;
+  background-color: var(--bg-color);
 }
 
 @media screen and (max-width: 900px) {
