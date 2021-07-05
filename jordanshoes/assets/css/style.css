@@ -1,0 +1,129 @@
+body {
+    background: var(--bgSite);
+}
+
+.header {
+    font-family: Montserrat-Medium;
+}
+
+.header__discount {
+    align-items: center;
+    background-color: var(--title);
+    color: var(--white);
+    display: flex;
+    font-size: 1.8rem;
+    font-weight: 500;
+    height: 60px;
+    justify-content: center;
+}
+
+.header__title {
+    color: var(--title);
+    align-items: center;
+    display: flex;
+    font-size: 2.4rem;
+    font-style: normal;
+    font-weight: 600;
+    height: 60px;
+    justify-content: center;
+}
+
+.banner{
+    position: relative;
+}
+
+.banner__image {
+    background-image: url(../images/wallpaper.jpeg);
+    background-position: 60%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: brightness(50%);
+    height: 37.7rem;
+}
+
+.banner__information {
+    color: var(--white);
+    font-family: 'Montserrat-Medium';
+    margin-left: 10.0rem;
+    position: absolute;
+    top: 130px;
+    width: 45.0rem;
+}
+
+.information-title {
+    font-size: 3.2rem; 
+    font-weight: 700;
+    margin-bottom: 19px;
+}
+
+.information-text {
+    font-size: 1.8rem;
+    line-height: 3.530rem;
+}
+
+.spotlight {
+    color: var(--title);
+    font-family: 'Montserrat-Medium';
+    text-align: center;
+}
+
+.spotlight__title{
+    font-size: 3.2rem;
+    font-weight: 600;
+    line-height: 6.278rem;
+    margin-top: 58px;
+}
+
+.spotlight__text {
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-bottom: 4.45rem;
+}
+
+.container {
+    margin: 0 auto;
+    width: 70%;
+}
+
+.shoes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.shoes__card{
+    align-items: center;
+    background-color: var(--bgCard);
+    display: flex;
+    height: 30.0rem;
+    justify-content: center;
+    margin: 1.45rem 1.3rem;
+    width: 30.0rem;
+}
+
+.footer {
+    align-items: center;
+    background-color: #181818;
+    color: var(--bgSite);
+    display: flex;
+    font-family: 'Montserrat-Medium';
+    font-size: 1.8rem;
+    height: 60px;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+@media screen and (max-width: 768px) {
+    .banner__information{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        margin: 20px;
+        width: auto;
+    }
+
+    .container, .shoes__card {
+        width: 100%;
+    }
+
+}
