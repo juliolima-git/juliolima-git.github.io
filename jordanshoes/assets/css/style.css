@@ -149,6 +149,9 @@ body {
         font-size: 1.6rem;
     }
     
+    .banner__image {
+        background-attachment: scroll;
+    }
     .banner__information{
         align-items: center;
         display: flex;
