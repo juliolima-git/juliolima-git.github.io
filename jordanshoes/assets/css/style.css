@@ -33,10 +33,11 @@ body {
 }
 
 .banner__image {
+    background-attachment: fixed;
     background-image: url(../images/wallpaper.jpeg);
-    background-position: 60%;
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: 60%;
     filter: brightness(50%);
     height: 37.7rem;
 }
@@ -81,8 +82,8 @@ body {
 }
 
 .container {
-    max-width: 1400px;
     margin: 0 auto;
+    max-width: 1400px;
 }
 
 .shoes {
@@ -94,11 +95,41 @@ body {
 .shoes__card{
     align-items: center;
     background-color: var(--bgCard);
+    cursor: pointer;
     display: flex;
     height: 30.0rem;
     justify-content: center;
     margin: 1.45rem 1.3rem;
     width: 30.0rem;
+    position: relative;
+}
+
+.shoes__overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #18181880;
+}
+      
+.shoes__card:hover .shoes__overlay {
+    opacity: 1;
+}
+
+.overlay-text {
+    align-items: center;
+    color: #FFF;
+    display: flex;
+    font-family: 'Montserrat-Medium';
+    height: 100%;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
 }
 
 .footer {
@@ -119,12 +150,12 @@ body {
     }
     
     .banner__information{
+        align-items: center;
         display: flex;
         flex-wrap: wrap;
-        align-items: center;
         margin: 20px;
-        width: auto;
         top: 104px;
+        width: auto;
     }
 
     .information-title {
