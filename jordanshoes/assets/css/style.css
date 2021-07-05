@@ -81,8 +81,8 @@ body {
 }
 
 .container {
+    max-width: 1400px;
     margin: 0 auto;
-    width: 70%;
 }
 
 .shoes {
@@ -114,16 +114,49 @@ body {
 }
 
 @media screen and (max-width: 768px) {
+    .header__discount{
+        font-size: 1.6rem;
+    }
+    
     .banner__information{
         display: flex;
         flex-wrap: wrap;
         align-items: center;
         margin: 20px;
         width: auto;
+        top: 104px;
+    }
+
+    .information-title {
+        font-size: 2.8rem;
+        line-height: 3.413rem;
+        margin-bottom: 12px;
+    }
+
+    .information-text {
+        font-size: 1.6rem;
+        line-height: 2.8rem;
     }
 
     .container, .shoes__card {
         width: 100%;
     }
 
+    .spotlight__title {
+        font-size: 2.8rem;
+        margin-bottom: 5px;
+    }
+
+    .spotlight__text {
+        font-size: 1.6rem;
+        padding: 0px 40px;
+    }
+
+    .shoes__item {
+        width: 250px;
+    }
+
+    .footer {
+        margin-top: 50px;
+    }
 }
