@@ -1,6 +1,6 @@
 const init = () => {
     //Assigning dark theme
-    const themeIcon = document.querySelector(".js-theme-icon");
+    const themeIcon = document.querySelector("[data-icon-theme]");
     themeIcon.addEventListener("click", 
         () => 
         { 
@@ -18,7 +18,7 @@ const init = () => {
     );
     
     //Favorite Icon Animation 
-    const favoriteButtons = document.querySelectorAll(".article__favorite-button");
+    const favoriteButtons = document.querySelectorAll("[data-button]");
     
     for(let button of favoriteButtons)
         button.addEventListener("click", () => {
@@ -27,11 +27,11 @@ const init = () => {
     )
     
     //Search field
-    const search = document.querySelector(".search");
+    const search = document.querySelector("[data-search]");
 
     search.addEventListener("keyup", () => {
         const searchValue = search.value;
-        const articleTitles = document.querySelectorAll(".text__title");
+        const articleTitles = document.querySelectorAll("[data-title]");
 
         for(let title of articleTitles){
             if(title.textContent.toUpperCase().indexOf(searchValue.toUpperCase()) < 0 ){
@@ -46,7 +46,7 @@ const init = () => {
     })
 
     //Scrolling Itens Animation
-    ScrollReveal().reveal('.article', { delay: 150, viewFactor: 0.7 });
+    ScrollReveal().reveal('[data-article]', { delay: 150, viewFactor: 0.7 });
     
 } 
 
