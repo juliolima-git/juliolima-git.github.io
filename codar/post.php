@@ -18,7 +18,7 @@
         <h1><?= $currentPost['title'] ?></h1>
         <p class="post__description"><?= $currentPost['description'] ?></p>
         <div class="img-container">
-            <img src="/public/assets/img/<?= $currentPost['img'] ?>" alt="<?= $currentPost['title'] ?>">
+            <img src="/assets/img/<?= $currentPost['img'] ?>" alt="<?= $currentPost['title'] ?>">
         </div>
         <p class="post__content">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni reprehenderit doloremque vel aliquid sed sit reiciendis labore quibusdam nulla, est placeat, velit aut perferendis dolores repellat saepe eos laudantium optio.

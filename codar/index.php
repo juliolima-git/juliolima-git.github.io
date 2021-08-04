@@ -9,9 +9,9 @@
         <section class="container__posts">
             <?php foreach($posts as $post): ?>
                 <article class="post__box">
-                    <img src="/public/assets/img/<?= $post['img'] ?>" alt="<?= $post['title'] ?>">
+                    <img src="/assets/img/<?= $post['img'] ?>" alt="<?= $post['title'] ?>">
                     <h2 class="post__title">
-                        <a href="<?= $BASE_URL ?>public/post.php?id=<?= $post['id'] ?>"><?= $post['title'] ?></a>
+                        <a href="<?= $BASE_URL ?>post.php?id=<?= $post['id'] ?>"><?= $post['title'] ?></a>
                     </h2>
                     <p class="post__description"><?= $post['description'] ?></p>
                     <div class="tags-container">
